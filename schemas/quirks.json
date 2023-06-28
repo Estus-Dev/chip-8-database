@@ -5,22 +5,28 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "string"
+          "type": "string",
+          "description": "An ID for this quirk, by which to reference it in programs.json or platforms.json."
         },
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "The name of this quirk."
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "A description of the quirk and why it exists."
         },
         "default": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "Whether or not this quirk should be enabled by default."
         },
         "ifTrue": {
-          "type": "string"
+          "type": "string",
+          "description": "A description of CHIP-8 behavior when this quirk is enabled."
         },
         "ifFalse": {
-          "type": "string"
+          "type": "string",
+          "description": "A description of CHIP-8 behavior when this quirk is not enabled."
         }
       },
       "required": ["id", "name", "default", "ifTrue", "ifFalse"],
